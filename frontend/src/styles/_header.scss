@@ -1,0 +1,36 @@
+.header-content {
+  margin-top: 3vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .header {
+    width: 55%;
+
+    @include for-phone-down {
+      width: 80%;
+    }
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 3.8em;
+    color: hsl(234, 12%, 34%);
+
+    @include for-phone-down {
+      margin: .5rem 0;
+      font-size: 1.8rem;
+    }
+  }
+
+  h2 {
+    font-size: 3.6em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+
+    @include for-phone-down {
+      font-size: 1.8rem;
+    }
+  }
+}

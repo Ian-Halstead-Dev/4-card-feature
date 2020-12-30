@@ -1,0 +1,33 @@
+@import 'resets';
+@import 'breakpoints';
+
+body {
+  width: auto;
+  background-color: hsl(0, 0%, 98%);
+
+  #app {
+    display: flex;
+    justify-content: center;
+
+    &>div {
+      display: flex;
+      width: 80vw;
+      flex-direction: column;
+
+      @import 'header';
+      @import 'card';
+    }
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(229, 6%, 66%);
+
+  @include for-phone-down {
+    font-size: 1.2rem;
+  }
+
+}
